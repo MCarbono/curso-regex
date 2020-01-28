@@ -12,7 +12,7 @@ Válidos:
 255.255.255.255
 0.0.0.0
 `
-
-const n = '(\\d{1,2}|1\\d{2}|2[0-4]\\d|25[0-5])'
-const ipv4 = RegExp(`\\b${n}\\.${n}\\.${n}\\.${n}\\b`, 'g')
+const n = '(\\d{1,2}|1\\d{2}|2\\d[0-4]|2\\d[0-5])';
+const ipv4 = RegExp(`\\b${n}\\.${n}\\.${n}\\.${n}\\b`,'g')
 console.log(text.match(ipv4))
+

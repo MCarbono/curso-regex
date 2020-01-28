@@ -11,4 +11,4 @@ Foi123!
 
 console.log(text.match(/^.{6,20}$/gm))
 console.log(text.match(/^(?=.*[A-Z]).{6,20}$/gm))
-console.log(text.match(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#@$!%&*_]).{6,20}$/gm))
+console.log(text.match(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&*_]).{6,20}$/gm))

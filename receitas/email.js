@@ -9,3 +9,4 @@ Os emails dos convidados são:
 `
 
 console.log(text.match(/\S+@\w+\.\w{2,6}(\.\w{2})?/g))
+//console.log(text.match(/\S+@\w+\.\w{3,8}(\.\w{2})?/g))
