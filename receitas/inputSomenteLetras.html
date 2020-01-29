@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="teste">Only Letters</label>
+    <input type="text" id="letters" name="letters"> 
+
+    <script>
+        const charactersLetters = '([!""#\'\'%$¨&*()_=+/*-+\\[\\]:@\\.<>;\{\\}\\-``\u00b0\u00A7\u00AA¬,])'
+        const onlyLetters = RegExp(`\\d|${charactersLetters}`,'g')
+
+        document.getElementById('letters').addEventListener('keyup', function(){
+            this.value = this.value.replace(onlyLetters, '')
+        })
+    </script>
+</body>
+</html>
